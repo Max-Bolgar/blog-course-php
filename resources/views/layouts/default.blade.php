@@ -24,7 +24,7 @@
     </head>
     @endsection
     @yield('head')
-    
+
     <body>
         @section('header')
         <header class="head">
@@ -32,7 +32,7 @@
             <div class="alert">
                 <script>alert('{{session()->get('message')}}');</script>
             </div>
-            
+
             @endif
             <div class="col-md-5 left">
                 <div class="top_menu">
@@ -71,6 +71,10 @@
                             </div>
                             <input class="btn" type="submit" name="send_logIn" value="Войти">
                             <a class="btn" href="/register">Регистрация</a>
+                            <p>Вход через соцсети:</p>
+                            <div class="socialBtn">
+                                <a href="auth/facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </div>
                         </form>
                     </div>
 
@@ -91,11 +95,11 @@
         </header>
         @endsection
         @yield('header')
-        
+
         @section('content')
         @endsection
         @yield('content')
-        
+
         @section('footer')
         <footer>
             <p>Designed and develop by Bolgar Max | 2017</p>
@@ -103,7 +107,7 @@
         </footer>
         @endsection
         @yield('footer')
-        
+
         @section('scripts')
         <!--[if lt IE 9]>
         <script src="libs/html5shiv/es5-shim.min.js"></script>

@@ -129,6 +129,19 @@ p{
     margin: 5px auto;
     color: #fff;
 }
+.form_LogIn p {
+    color: #fff;
+}
+.socialBtn{
+    text-align: center;
+}
+.socialBtn a,
+.socialBtn i{
+    display: inline-block;
+    font-size: 23px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
 .form_LogIn form .btn {
     background-color: #000;
     color: #fff;

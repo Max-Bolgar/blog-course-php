@@ -34,6 +34,10 @@ Route::get('/about', ['uses'=>'AboutController@show', 'as' => 'about']);
 Route::get('/contacts', ['uses'=>'ContactsController@show', 'as' => 'contacts']);
 Route::post ('/contacts', ['uses'=>'ContactsController@store']);
 
+//autorization via facebook
+Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider_facebook');
+Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback_facebook'); 
+
 //autorization and amin panel
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
