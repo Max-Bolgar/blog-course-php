@@ -73,7 +73,8 @@
                             <a class="btn" href="/register">Регистрация</a>
                             <p>Вход через соцсети:</p>
                             <div class="socialBtn">
-                                <a href="auth/facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="/auth/facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="/auth/twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
                             </div>
                         </form>
                     </div>

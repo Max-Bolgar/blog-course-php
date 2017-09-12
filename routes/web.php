@@ -38,6 +38,10 @@ Route::post ('/contacts', ['uses'=>'ContactsController@store']);
 Route::get('auth/facebook', 'Auth\AuthController@redirectToProvider_facebook');
 Route::get('auth/facebook/callback', 'Auth\AuthController@handleProviderCallback_facebook'); 
 
+//autorization via twitter
+Route::get('auth/twitter', 'Auth\AuthController@redirectToProvider_twitter');
+Route::get('auth/twitter/callback', 'Auth\AuthController@handleProviderCallback_twitter');
+
 //autorization and amin panel
 Auth::routes();
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
