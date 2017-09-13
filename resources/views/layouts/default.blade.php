@@ -104,6 +104,7 @@
         @section('footer')
         <footer>
             <p>Designed and develop by Bolgar Max | 2017</p>
+            <a href="{{route('chat')}}">Чат</a>
             <a href="https://laravel.com/">Developed by Laravel Framework</a>
         </footer>
         @endsection

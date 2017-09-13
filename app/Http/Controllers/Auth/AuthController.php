@@ -21,7 +21,7 @@ class AuthController extends Controller
     }
     
     public function handleProviderCallback_facebook() {
-        $socialUser = \Socialite::driver('facebook')->user(); 
+        $socialUser = Socialite::driver('facebook')->user(); 
         
         
         $data = [

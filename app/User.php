@@ -41,5 +41,9 @@ class User extends Authenticatable {
     public function comments() {
         return $this->hasMany('App\Comment');
     }
+    
+    public function ChatMessages() {
+        return $this->hasMany('App\ChatMessage');
+    }
 
 }

@@ -92,5 +92,6 @@ $(document).ready(function () {
         $('div.infoUser').slideToggle('slow');
         return false;
     });
+    
 
 });

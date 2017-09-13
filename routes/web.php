@@ -17,6 +17,10 @@ Route::get('/', ['uses' => 'MainPageController@show', 'as' => 'main']);
 Route::get('/post/{id}', ['uses' => 'PostsController@show', 'as' => 'post']);
 Route::post('/post', ['uses' => 'PostsController@comments', 'as' => 'comment_p']);
 
+//Chat
+Route::get('/chat', ['uses' => 'ChatController@show', 'as' => 'chat']);
+Route::post('/chat', ['uses' => 'ChatController@store', 'as' => 'chat_p']);
+
 //Search show
 Route::post('/search', ['uses' => 'SearchController@show', 'as' => 'search_p']);
 
